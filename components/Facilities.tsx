@@ -8,42 +8,48 @@ export default function Facilities() {
   const facilities = [
     {
       name: 'Football Fields',
-      description: 'Professional turf with FIFA standard dimensions and floodlights for night matches.',
+      description:
+        'Professional turf with FIFA standard dimensions and floodlights for night matches.',
       icon: '⚽',
       color: 'from-green-500 to-emerald-600',
       stats: '3 Full-size Fields',
     },
     {
-      name: 'Tennis Courts',
-      description: 'Hard courts with professional lighting and seating for spectators.',
-      icon: '🎾',
-      color: 'from-yellow-500 to-orange-600',
-      stats: '6 Courts Available',
-    },
-    {
-      name: 'Basketball Courts',
-      description: 'Indoor and outdoor courts with professional-grade flooring and equipment.',
-      icon: '🏀',
-      color: 'from-orange-500 to-red-600',
-      stats: '4 Full Courts',
-    },
-    {
       name: 'Cricket Ground',
-      description: 'Full-size ground with turf wickets and practice nets for all skill levels.',
+      description:
+        'Full-size ground with turf wickets and practice nets for all skill levels.',
       icon: '🏏',
       color: 'from-blue-500 to-indigo-600',
       stats: '1 Stadium + 8 Nets',
     },
     {
+      name: 'Pickle Ball Courts',
+      description:
+        'Dedicated pickleball courts designed for both casual and professional play with high-quality surfaces.',
+      icon: '🥒',
+      color: 'from-yellow-500 to-lime-600',
+      stats: '4 Courts',
+    },
+    {
+      name: 'Snooker Lounge',
+      description:
+        'Premium snooker and billiards lounge with professional tables and ambient lighting for tournaments.',
+      icon: '🎱',
+      color: 'from-purple-500 to-indigo-600',
+      stats: '6 Tables',
+    },
+    {
       name: 'Volleyball Courts',
-      description: 'Beach and indoor volleyball courts with tournament-ready facilities.',
+      description:
+        'Beach and indoor volleyball courts with tournament-ready facilities.',
       icon: '🏐',
       color: 'from-pink-500 to-rose-600',
       stats: '3 Courts',
     },
     {
       name: 'Swimming Pool',
-      description: 'Olympic-size pool with separate sections for training and recreational swimming.',
+      description:
+        'Olympic-size pool with separate sections for training and recreational swimming.',
       icon: '🏊',
       color: 'from-cyan-500 to-blue-600',
       stats: '50m Olympic Pool',
@@ -62,7 +68,8 @@ export default function Facilities() {
             State-of-the-Art Sports Infrastructure
           </h3>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our comprehensive range of world-class sports facilities designed for athletes of all levels
+            Explore our comprehensive range of world-class sports facilities
+            designed for athletes of all levels
           </p>
         </div>
 
@@ -74,10 +81,14 @@ export default function Facilities() {
               className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
             >
               {/* Gradient Background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${facility.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-              
+              <div
+                className={`absolute inset-0 bg-gradient-to-br ${facility.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+              ></div>
+
               {/* Icon Section */}
-              <div className={`relative h-48 bg-gradient-to-br ${facility.color} flex items-center justify-center`}>
+              <div
+                className={`relative h-48 bg-gradient-to-br ${facility.color} flex items-center justify-center`}
+              >
                 <div className="text-8xl transform group-hover:scale-110 transition-transform duration-300">
                   {facility.icon}
                 </div>
@@ -90,7 +101,7 @@ export default function Facilities() {
                     {facility.name}
                   </h4>
                 </div>
-                
+
                 <p className="text-gray-600 mb-4 leading-relaxed">
                   {facility.description}
                 </p>
@@ -99,9 +110,11 @@ export default function Facilities() {
                   <span className="inline-flex items-center text-sm font-semibold text-green-600 bg-green-50 px-3 py-1 rounded-full">
                     {facility.stats}
                   </span>
-                  
+
                   <Link
-                    href={`/facilities/${facility.name.toLowerCase().replace(' ', '-')}`}
+                    href={`/facilities/${facility.name
+                      .toLowerCase()
+                      .replace(' ', '-')}`}
                     className="text-green-600 hover:text-green-700 font-semibold flex items-center group-hover:translate-x-1 transition-transform"
                   >
                     Explore

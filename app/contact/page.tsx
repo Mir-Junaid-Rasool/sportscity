@@ -299,7 +299,7 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
                     <p className="text-gray-600 text-sm">
-                      Malla Bagh, Srinagar<br />Jammu & Kashmir 190001
+                      Malla Bagh, Srinagar<br />Jammu & Kashmir 190006
                     </p>
                   </div>
                 </div>
@@ -339,22 +339,35 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Map */}
-            <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us</h3>
-              <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.2661234567890!2d74.79776!3d34.08378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA1JzAxLjYiTiA3NMKwNDcnNTEuOSJF!5e0!3m2!1sen!2sin!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Mir Sports City Location"
-                ></iframe>
-              </div>
-            </div>
+           {/* Map */}
+<div className="bg-white rounded-2xl shadow-xl p-8">
+  <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us</h3>
+  <div className="aspect-square bg-gray-200 rounded-lg overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps?q=34.1501045227051,74.8290710449219&hl=en&z=15&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title=" Sports City Location"
+    ></iframe>
+  </div>
+
+  {/* Optional direct map link */}
+  <div className="mt-4 text-center">
+    <a
+      href="https://www.google.com/maps?q=34.1501045227051,74.8290710449219"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-green-600 hover:text-green-700 font-semibold underline"
+    >
+      Open in Google Maps
+    </a>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
