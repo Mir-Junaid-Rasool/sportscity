@@ -44,7 +44,8 @@ export default function ContactPage() {
     { time: '9:00 PM - 10:00 PM', available: true },
   ];
 
-  const handleChange = (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleChange = (e:any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
