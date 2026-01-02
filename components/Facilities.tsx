@@ -6,55 +6,48 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Facilities() {
   const facilities = [
-    {
-      name: 'Football Fields',
-      description:
-        'Professional turf with FIFA standard dimensions and floodlights for night matches.',
-      icon: '⚽',
-      color: 'from-green-500 to-emerald-600',
-      stats: '3 Full-size Fields',
-    },
-    {
-      name: 'Cricket Ground',
-      description:
-        'Full-size ground with turf wickets and practice nets for all skill levels.',
-      icon: '🏏',
-      color: 'from-blue-500 to-indigo-600',
-      stats: '1 Stadium + 8 Nets',
-    },
-    {
-      name: 'Pickle Ball Courts',
-      description:
-        'Dedicated pickleball courts designed for both casual and professional play with high-quality surfaces.',
-      icon: '🥒',
-      color: 'from-yellow-500 to-lime-600',
-      stats: '4 Courts',
-    },
-    {
-      name: 'Snooker Lounge',
-      description:
-        'Premium snooker and billiards lounge with professional tables and ambient lighting for tournaments.',
-      icon: '🎱',
-      color: 'from-purple-500 to-indigo-600',
-      stats: '6 Tables',
-    },
-    {
-      name: 'Volleyball Courts',
-      description:
-        'Beach and indoor volleyball courts with tournament-ready facilities.',
-      icon: '🏐',
-      color: 'from-pink-500 to-rose-600',
-      stats: '3 Courts',
-    },
-    {
-      name: 'Swimming Pool',
-      description:
-        'Olympic-size pool with separate sections for training and recreational swimming.',
-      icon: '🏊',
-      color: 'from-cyan-500 to-blue-600',
-      stats: '50m Olympic Pool',
-    },
-  ];
+  {
+    name: 'Football Fields',
+    description:
+      'Professional turf with FIFA standard dimensions and floodlights for night matches.',
+    icon: '⚽',
+    color: 'from-green-500 to-emerald-600',
+    stats: '3 Full-size Fields',
+  },
+  {
+    name: 'Cricket Ground',
+    description:
+      'Full-size ground with turf wickets and practice nets for all skill levels.',
+    icon: '🏏',
+    color: 'from-blue-500 to-indigo-600',
+    stats: '1 Stadium + 8 Nets',
+  },
+  {
+    name: 'Pickle Ball Courts',
+    description:
+      'Dedicated pickleball courts designed for both casual and professional play with high-quality surfaces.',
+    icon: '🥒',
+    color: 'from-yellow-500 to-lime-600',
+    stats: '4 Courts',
+  },
+  {
+    name: 'Snooker Lounge',
+    description:
+      'Premium snooker and billiards lounge with professional tables and ambient lighting for tournaments.',
+    icon: '🎱',
+    color: 'from-purple-500 to-indigo-600',
+    stats: '6 Tables',
+  },
+  {
+    name: 'Volleyball Courts',
+    description:
+      'Beach and indoor volleyball courts with tournament-ready facilities.',
+    icon: '🏐',
+    color: 'from-pink-500 to-rose-600',
+    stats: '3 Courts',
+  },
+];
+
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-50 to-green-50">
