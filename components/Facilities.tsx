@@ -103,16 +103,6 @@ export default function Facilities() {
                   <span className="inline-flex items-center text-sm font-semibold text-green-600 bg-green-50 px-3 py-1 rounded-full">
                     {facility.stats}
                   </span>
-
-                  <Link
-                    href={`/facilities/${facility.name
-                      .toLowerCase()
-                      .replace(' ', '-')}`}
-                    className="text-green-600 hover:text-green-700 font-semibold flex items-center group-hover:translate-x-1 transition-transform"
-                  >
-                    Explore
-                    <ArrowRight size={16} className="ml-1" />
-                  </Link>
                 </div>
               </div>
             </div>

@@ -402,7 +402,7 @@ export default function ContactPage() {
               </h3>
               <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden shadow-inner">
                 <iframe
-                  src="https://www.google.com/maps?q=34.1501045227051,74.8290710449219&hl=en&z=15&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d31143.914384311865!2d77.42873325!3d12.648706149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1767412199506!5m2!1sen!2sinhttps://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.9294605035097!2d74.82719076782126!3d34.149951312647204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18543ad5ec43d%3A0x7e29b96c6afa27dc!2sSports%20City!5e0!3m2!1sen!2sin!4v1767412443851!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

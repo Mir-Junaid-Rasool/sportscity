@@ -3,12 +3,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import Image from 'next/image'; 
+import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,20 +20,9 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { 
-      name: 'Facilities', 
-      href: '/facilities',
-      dropdown: [
-        { name: 'Football Fields', href: '/facilities/football' },
-        { name: 'Tennis Courts', href: '/facilities/tennis' },
-        { name: 'Basketball Courts', href: '/facilities/basketball' },
-        { name: 'Volleyball Courts', href: '/facilities/volleyball' },
-        { name: 'Cricket Ground', href: '/facilities/cricket' },
-      ]
-    },
+    { name: 'Facilities', href: '/facilities' },
     { name: 'Coaching', href: '/coaching' },
     { name: 'Membership', href: '/membership' },
-    { name: 'Events', href: '/events' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -50,16 +39,16 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-12 h-12 flex items-center justify-center transform group-hover:scale-110 transition-transform">
-  <Image
-    src="/logo.jpg"
-    alt="Mir Sports City Logo"
-    width={48}
-    height={48}
-    className="rounded-full object-cover"
-    priority
-  />
-</div>
+            <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform">
+              <Image
+                src="/logo.jpg"
+                alt="Sports City Logo"
+                width={48}
+                height={48}
+                className="rounded-full object-cover"
+                priority
+              />
+            </div>
             <div className="hidden sm:block">
               <h1 className="text-xl font-bold text-gray-900 leading-tight">
                 Sports City
@@ -71,36 +60,13 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-1">
             {navLinks.map((link) => (
-              <div
+              <Link
                 key={link.name}
-                className="relative"
-                onMouseEnter={() => link.dropdown && setActiveDropdown(link.name)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                href={link.href}
+                className="px-4 py-2 text-gray-700 hover:text-green-600 font-medium transition-colors"
               >
-                <Link
-                  href={link.href}
-                  className="px-4 py-2 text-gray-700 hover:text-green-600 font-medium transition-colors flex items-center group"
-                >
-                  {link.name}
-                  {link.dropdown && (
-                    <ChevronDown className="ml-1 w-4 h-4 group-hover:rotate-180 transition-transform" />
-                  )}
-                </Link>
-                
-                {link.dropdown && activeDropdown === link.name && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2">
-                    {link.dropdown.map((item) => (
-                      <Link
-                        key={item.name}
-                        href={item.href}
-                        className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+                {link.name}
+              </Link>
             ))}
           </div>
 
@@ -128,29 +94,14 @@ export default function Navbar() {
           <div className="lg:hidden mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-2 pt-4">
               {navLinks.map((link) => (
-                <div key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg font-medium transition-colors"
-                    onClick={() => !link.dropdown && setIsMobileMenuOpen(false)}
-                  >
-                    {link.name}
-                  </Link>
-                  {link.dropdown && (
-                    <div className="ml-4 mt-1 space-y-1">
-                      {link.dropdown.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                          className="block px-4 py-2 text-sm text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors"
-                          onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600 rounded-lg font-medium transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
               ))}
               <Link
                 href="/contact"

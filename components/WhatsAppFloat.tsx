@@ -10,7 +10,7 @@ export default function WhatsAppFloat() {
 
   // Replace with your actual WhatsApp number (include country code without + or spaces)
   const phoneNumber = '919796575590'; // Format: 919419012345 for +91 94190 12345
-  const message = 'Hi! I would like to inquire about Mir Sports City facilities.';
+  const message = 'Hi! I would like to inquire about Sports City facilities.';
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

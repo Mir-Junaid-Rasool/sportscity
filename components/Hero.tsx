@@ -34,7 +34,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl text-gray-600 max-w-2xl">
-              Experience world-class sports facilities at Mir Sports City. From football to tennis, 
+              Experience world-class sports facilities at Sports City. From football to tennis, 
               cricket to basketball - we have everything you need to excel in your sport.
             </p>
 

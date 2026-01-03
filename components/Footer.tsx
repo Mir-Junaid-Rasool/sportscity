@@ -44,7 +44,7 @@ export default function Footer() {
                <div className="relative w-12 h-12 flex items-center justify-center transform group-hover:scale-110 transition-transform">
                 <Image
                   src="/logo.jpg"
-                  alt="Mir Sports City Logo"
+                  alt="Sports City Logo"
                   width={48}
                   height={48}
                   className="rounded-full object-cover"
@@ -194,7 +194,7 @@ export default function Footer() {
 
           {/* Copyright */}
          <p className="text-gray-500 text-sm text-center md:text-right">
-  © {currentYear} Mir Sports City. All rights reserved. Made with ❤️ by{' '}
+  © {currentYear} Sports City. All rights reserved. Made with ❤️ by{' '}
   <a
     href="https://mirjunaid.netlify.app"
     target="_blank"

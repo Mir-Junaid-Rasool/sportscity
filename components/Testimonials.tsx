@@ -13,7 +13,7 @@ export default function Testimonials() {
       role: 'Professional Cricketer',
       image: '🏏',
       rating: 5,
-      text: 'Mir Sports City has the best cricket facilities in Kashmir. The practice nets and coaching staff helped me improve my game significantly. Highly recommended for serious athletes!',
+      text: 'Sports City has the best cricket facilities in Kashmir. The practice nets and coaching staff helped me improve my game significantly. Highly recommended for serious athletes!',
     },
     {
       name: 'Priya Malik',

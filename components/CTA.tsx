@@ -50,7 +50,7 @@ export default function CTA() {
             </Link>
 
             <Link
-              href="/booking"
+              href="/contact"
               className="group bg-transparent border-2 border-white text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 transform hover:scale-105 transition-all flex items-center"
             >
               <Calendar className="mr-2" size={20} />
